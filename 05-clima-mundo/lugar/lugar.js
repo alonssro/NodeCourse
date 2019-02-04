@@ -10,7 +10,7 @@ const getLugarLatLng = async (direccion) => {
     }
 
     let location = respuesta.data.results[0];
-    let coors = location.geometry.location
+    let coors = location.geometry.location;
 
     return {
         direccion: location.formatted_address,
